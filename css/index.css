@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+body,
+html{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 设置雪花特效 */
+@keyframes mysnow {
+    0% {
+        bottom: 100%;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: 0;
+        bottom: 0;
+    }
+}
+
+@-webkit-keyframes mysnow {
+    0% {
+        bottom: 100%;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        opacity: 0;
+        bottom: 0;
+    }
+}
+
+@-moz-keyframes mysnow {
+    0% {
+        bottom: 100%;
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(0deg);
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+@-ms-keyframes mysnow {
+    0% {
+        bottom: 100%;
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+        -ms-transform: rotate(0deg);
+    }
+
+    100% {
+        -ms-transform: rotate(0deg);
+        opacity: 2;
+        bottom: 0;
+    }
+}
+
+@-o-keyframes mysnow {
+    0% {
+        bottom: 100%;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 2;
+        -o-transform: rotate(0deg);
+    }
+
+    100% {
+        -o-transform: rotate(0deg);
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+.roll {
+    position: absolute;
+    opacity: 1;
+    animation: mysnow 5s;
+    -webkit-animation: mysnow 5s;
+    -moz-animation: mysnow 5s;
+    -ms-animation: mysnow 5s;
+    -o-animation: mysnow 5s;
+    height: 80px;
+}
+
+.div {
+    position: fixed;
+    z-index: 1;
+}
+
+
+
+/* 设置首页样式 */
+.main_box{
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../images/back.jpg);
+    background-size: 100% 100%; */
+    background: rgb(216, 211, 211);
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    /* border: 2px solid red; */
+    display: flex;
+    box-sizing: border-box;
+    text-indent: 1em;
+}
+
+.left{
+    flex: 4;
+    /* border: 2px solid green; */
+    line-height: 65px;
+}
+
+.left span{
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(224, 192, 85);
+}
+
+.left label{
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+}
+
+.right{
+    flex: 5;
+    /* border: 2px solid green; */
+    color: white;
+    display: flex;
+    margin-left: 100px;
+}
+
+.item{
+    flex:1;
+    line-height: 70px;
+}
+
+
+
+.center{
+    flex: 1;
+    /* border: 2px solid green; */
+}
+
+.boxcenter{
+    width: 80%;
+    height: 450px;
+    margin: 50px auto 0;
+    /* border: 2px solid red; */
+    display: flex;
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+}
+
+.acitem1{
+    flex: 1;
+    /* border: 2px solid blue; */
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+
+.acitem1:hover{
+    transform: scale(1.1,1.1);
+    transition: all 2s;
+}
+
+
+.images{
+    width: 100%;
+    height: 350px;
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 20px 0;
+}
+
+

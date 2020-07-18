@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body,
+html{
+    width: 100%;
+    height: 100%;
+}
+
+.jiazai{
+    width: 100%;
+    height: 100%;
+    background: rgb(243, 240, 240);
+    display: block;
+    position: relative;
+}
+
+.centerbox{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    height: 100px;
+    /* border: 2px solid red; */
+    line-height: 100px;
+    text-align: center;
+    font-size: 40px;
+    background: black;
+    color: rgb(248, 247, 242);
+    border-radius: 0 40px 0 40px;
+}
+
+.xianshi{
+    width: 100%;
+    height: 100%;
+    background: rgb(243, 240, 240);
+    background-image: url(../images/center2.jpg);
+    background-size: 100% 100%;
+}
+
+.mainbox{
+    width: 900px;
+    height: 550px;
+    border: 2px solid white;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgb(243, 240, 240,0.5);
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    /* border: 2px solid red; */
+}
+
+span{
+    margin-top: 5px;
+    display: block;
+    width: 100px;
+    height: 40px;
+    /* border: 2px solid red; */
+    line-height: 40px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 770px;
+    background: rgb(243, 206, 206);
+    cursor: pointer;
+}
+
+.bottom{
+    width: 100%;
+    height: 500px;
+    /* border: 2px solid red; */
+}
+
+.left{
+    float: left;
+    width: 440px;
+    height: 100%;
+    /* border: 2px solid green; */
+    text-align: center;
+    font-size: 25px;
+}
+
+.image{
+    width: 250px;
+    height: 250px;
+    margin: 50px auto;
+    /* border: 2px solid red; */
+}
+
+.image:hover{
+    transform: rotate(45deg);
+    transition: all 2s;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.right{
+    float: left;
+    width: 440px;
+    height: 100%;
+    /* border: 2px solid green; */
+    text-align: center;
+}
+
+.item{
+    width: 180px;
+    float: left;
+    height: 180px;
+    /* border: 2px solid red; */
+    margin: 15px;
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+}
+
+.item:hover{
+    transform: rotate(45deg);
+    transition: all 2s;
+}
